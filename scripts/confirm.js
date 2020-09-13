@@ -30,10 +30,7 @@ export const asyncConfirm = (question, options) => {
 
   return new Promise((resolve) => {
     modal.addEventListener('click', (e) => {
-      if (e.target.dataset.type !== 'option') {
-        return;
-      };
-
+      if (e.target.dataset.type !== 'option') return;
       shadow.remove();
       const { value } = e.target.dataset;
       resolve(value);
