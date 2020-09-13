@@ -25,7 +25,6 @@ body {
 }
 
 .option {
-  outline: none;
   margin-top: 5px;
   cursor: pointer;
   padding: 7px;
