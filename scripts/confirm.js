@@ -1,8 +1,8 @@
-const toButton = ({ label, value }) => (
-  `<button data-type="option" data-value="${value}" class="option">
+const toButton = ({ label, value }) => `
+  <button data-type="option" data-value="${value}" class="option">
     ${label}
-  </button>`
-);
+  </button>
+`;
 
 const buildButtonsHTML = (options) => (
   options.map(toButton).join('')
@@ -19,7 +19,7 @@ const buildModal = (question, options) => {
   `;
 
   return modal;
-}
+};
 
 export const asyncConfirm = (question, options) => {
   const shadow = document.createElement('div');
