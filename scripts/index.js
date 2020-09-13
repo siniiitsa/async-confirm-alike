@@ -7,6 +7,9 @@ const data = [
 ];
 
 asyncConfirm('Чего ты хочешь?', data)
-  .then(console.log);
+  .then((result) => {
+    document.write(`<h1>${result}</h1>`);
+    console.log(result);
+  });
 
 console.log('code after promise');
